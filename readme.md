@@ -8,7 +8,6 @@
 -  NLTK = 3.6.2
 
 
-
 ##### Installation steps:
 
 1. Clone the repository
@@ -23,5 +22,14 @@
 > pip install -r requirements.txt
 
 4. Run the following command:
+```sh  
+ Note: Make sure you have downloaded following before processing:
+ 
+ - twitter_samples
+ - wordnet
+ - averaged_perceptron_tagger
+ - punkt 
 
+download using - nltk.download("")
+```
 >  python sent_analysis.py
