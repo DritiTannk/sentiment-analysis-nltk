@@ -1,5 +1,4 @@
-import random
-import re, string
+import random, re, string
 
 from nltk.tag import pos_tag
 from nltk.stem.wordnet import WordNetLemmatizer
@@ -11,7 +10,6 @@ def remove_noise(single_tweet_tokens, stop_words=()):
     """
     This method clean the tweets and returns filtered tokens.
     """
-
     cleaned_tokens = []
 
     for token, tag in pos_tag(single_tweet_tokens):
@@ -100,12 +98,12 @@ if __name__ == '__main__':
     negative_dataset = [(tweet_dict, "Negative")
                         for tweet_dict in negative_tokens_for_model]
 
-    dataset = positive_dataset + negative_dataset
+    tweet_dataset = positive_dataset + negative_dataset
 
-    random.shuffle(dataset)  # Shuffling dataset
+    random.shuffle(tweet_dataset)  # Shuffling dataset
 
-    train_data = dataset[:7000]
-    test_data = dataset[7000:]
+    train_data = tweet_dataset[:7000]
+    test_data = tweet_dataset[7000:]
 
     classifier = NaiveBayesClassifier.train(train_data)
 
