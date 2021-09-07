@@ -1,6 +1,6 @@
 # Sentiment Analysis 
  
- _This project performs sentiment analysis on twiter sample dataset of the NLTK library.
+ _This project performs sentiment analysis on twiter sample dataset of the NLTK library_.
 
  ##### Library:
 
