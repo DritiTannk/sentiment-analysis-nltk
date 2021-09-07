@@ -114,14 +114,3 @@ if __name__ == '__main__':
     # User tweet input for model test
     user_tweet = str(input('ENTER THE NEW TWEET ==> '))
     test_sentiment(user_tweet)
-
-
-
-
-
-
-
-
-
-
-

@@ -30,7 +30,6 @@
  - averaged_perceptron_tagger
  - punkt 
 
-<<<<<<< HEAD
 download using - nltk.download("")
 ```
 >  python sent_analysis.py
